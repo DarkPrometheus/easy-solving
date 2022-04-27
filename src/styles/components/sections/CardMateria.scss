@@ -1,0 +1,203 @@
+@use "../../base/mixins" as *;
+
+$color1: #2f5f84;
+$color2: #805435;
+$color3: #ffce00;
+$color4: #ff8c00;
+$color5: #803535;
+$color6: #ff00ff;
+$color7: #4d3580;
+
+.CardMateria__container {
+    @include full;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-auto-rows: 25rem;
+    .CardMateria__content {
+        @include column;
+        width: 80%;
+        height: 80%;
+        place-self: center;
+        border-radius: 1rem;
+        .title {
+            flex: 1;
+            padding: 0.5rem;
+            border-top-left-radius: 0.5rem;
+            border-top-right-radius: 0.5rem;
+            font-size: 1.8rem;
+            &:hover {
+                cursor: pointer;
+                color: white;
+            }
+        }
+        .CardMateria__body {
+            flex: 12;
+            ul {
+                @include column;
+                margin: 0.5rem 0 0 0;
+
+                transition: background-color 0.2s ease;
+                img {
+                    width: 0.8rem;
+                    transform: rotate(180deg);
+                    margin: 0 0.2rem 0 0;
+                }
+                a {
+                    padding: 0.4rem 0 0.4rem 1rem;
+                    color: white;
+                    &:hover {
+                        cursor: pointer;
+                        box-shadow: 0 0 0 1px black inset;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.color1 {
+    background-color: lighten($color: $color1, $amount: 10%);
+    .title {
+        background-color: $color1;
+        &:hover {
+            background-color: darken($color: $color1, $amount: 20%);
+        }
+    }
+    .CardMateria__body,
+    .CardAsignatura__body {
+        ul,
+        div {
+            a {
+                &:hover {
+                    background-color: darken($color: $color1, $amount: 5%);
+                }
+            }
+        }
+    }
+}
+.color2 {
+    background-color: lighten($color: $color2, $amount: 10%);
+    .title {
+        background-color: $color2;
+        &:hover {
+            background-color: darken($color: $color2, $amount: 20%);
+        }
+    }
+    .CardMateria__body,
+    .CardAsignatura__body {
+        ul,
+        div {
+            a {
+                &:hover {
+                    background-color: darken($color: $color2, $amount: 5%);
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+.color3 {
+    background-color: lighten($color: $color3, $amount: 10%);
+    .title {
+        background-color: $color3;
+        &:hover {
+            background-color: darken($color: $color3, $amount: 20%);
+        }
+    }
+    .CardMateria__body,
+    .CardAsignatura__body {
+        ul,
+        div {
+            a {
+                &:hover {
+                    background-color: darken($color: $color3, $amount: 5%);
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+.color4 {
+    background-color: lighten($color: $color4, $amount: 10%);
+    .title {
+        background-color: $color4;
+        &:hover {
+            background-color: darken($color: $color4, $amount: 20%);
+        }
+    }
+    .CardMateria__body,
+    .CardAsignatura__body {
+        ul,
+        div {
+            a {
+                &:hover {
+                    background-color: darken($color: $color4, $amount: 5%);
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+.color5 {
+    background-color: lighten($color: $color5, $amount: 10%);
+    .title {
+        background-color: $color5;
+        &:hover {
+            background-color: darken($color: $color5, $amount: 20%);
+        }
+    }
+    .CardMateria__body,
+    .CardAsignatura__body {
+        ul,
+        div {
+            a {
+                &:hover {
+                    background-color: darken($color: $color5, $amount: 5%);
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+.color6 {
+    background-color: lighten($color: $color6, $amount: 10%);
+    .title {
+        background-color: $color6;
+        &:hover {
+            background-color: darken($color: $color6, $amount: 20%);
+        }
+    }
+    .CardMateria__body,
+    .CardAsignatura__body {
+        ul,
+        div {
+            a {
+                &:hover {
+                    background-color: darken($color: $color6, $amount: 5%);
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+.color7 {
+    background-color: lighten($color: $color7, $amount: 10%);
+    .title {
+        background-color: $color7;
+        &:hover {
+            background-color: darken($color: $color7, $amount: 20%);
+        }
+    }
+    .CardMateria__body,
+    .CardAsignatura__body {
+        ul,
+        div {
+            a {
+                &:hover {
+                    background-color: darken($color: $color7, $amount: 5%);
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

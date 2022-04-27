@@ -1,0 +1,20 @@
+@use "../../base/mixins" as *;
+
+.Dashboard {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    .Dashboard__container {
+        @include full;
+        background-color: #e6e6e6;
+        display: grid;
+        grid-template-rows: 5rem auto;
+        .Dashboard__content {
+            height: 100%;
+            overflow: auto;
+            .test {
+                color: pink;
+            }
+        }
+    }
+}

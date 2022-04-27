@@ -1,0 +1,89 @@
+@use "../../base" as *;
+
+.Auth__container {
+    @include fullv;
+    @include center;
+    height: 100vh;
+    background-color: #e6e6e6;
+    img {
+        width: 25rem;
+    }
+    .form {
+        width: 25rem;
+        border-radius: 10px;
+        background-color: #153f15;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0px 0px 4px 5px rgba(0, 0, 0, 0.25);
+        user-select: none;
+        h1 {
+            margin: 2rem 0 0 0;
+            font-size: 2rem;
+
+            font-family: "Libre Baskerville";
+            font-style: normal;
+            font-weight: 400;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+        .input {
+            @include center;
+            width: 100%;
+            p {
+                font-family: "Montserrat";
+                font-size: 1.5rem;
+                margin: 1rem 0 0.5rem 0;
+            }
+            input,
+            select {
+                width: 70%;
+                padding: 1rem 0 1rem 0.5rem;
+                background: #ffffff;
+                border: 1px solid #0c0c0c;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 5px;
+                font-family: "Montserrat";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 1.3rem;
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+        button {
+            width: 50%;
+            margin: 1rem 0 1rem 0;
+            padding: 0.5rem 1rem;
+            background: #51c14b;
+            color: #030303;
+            border-radius: 5px;
+            text-align: center;
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.5rem;
+            &:hover {
+                cursor: pointer;
+                background: lighten($color: #51c14b, $amount: 10%);
+            }
+            &:active {
+                background: darken($color: #51c14b, $amount: 5%);
+            }
+        }
+        .link {
+            font-family: "Montserrat";
+            font-size: 1rem;
+            margin: 0.5rem 0 0.5rem 0;
+            color: white;
+            cursor: pointer;
+            &:last-child {
+                margin: 0 0 2rem 0;
+            }
+            &:active {
+                color: rgb(196, 196, 196);
+            }
+        }
+    }
+}

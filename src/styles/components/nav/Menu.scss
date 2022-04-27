@@ -1,0 +1,40 @@
+@use "../../base/mixins" as *;
+
+$paddingLi: 1.5rem;
+
+.Menu {
+    background-color: #153f15;
+    height: 100%;
+    width: 17rem;
+    img {
+        margin: 0.5rem 0 0 0.5rem;
+        width: 13rem;
+        height: 4rem;
+    }
+    ul {
+        @include column;
+        padding: 3.5rem 0 0 0;
+        width: 100%;
+        user-select: none;
+        a {
+            @include row;
+            padding: calc($paddingLi / 2) 0 calc($paddingLi / 2) 0.5rem;
+            color: white;
+            font-size: 1.3rem;
+            width: 100%;
+            span {
+                @include center;
+                margin: 0 0 0 0.5rem;
+            }
+            &:hover {
+                cursor: pointer;
+                background-color: lighten($color: #153f15, $amount: 20%);
+                margin: 0;
+                box-shadow: 0 0 0 1px black inset;
+            }
+            &:active {
+                background-color: lighten($color: #153f15, $amount: 10%);
+            }
+        }
+    }
+}
