@@ -32,23 +32,52 @@ $color7: #4d3580;
         }
         .CardMateria__body {
             flex: 12;
-            ul {
+            overflow: auto;
+            .tema {
                 @include column;
-                margin: 0.5rem 0 0 0;
 
                 transition: background-color 0.2s ease;
-                img {
-                    width: 0.8rem;
-                    transform: rotate(180deg);
-                    margin: 0 0.2rem 0 0;
-                }
-                a {
-                    padding: 0.4rem 0 0.4rem 1rem;
-                    color: white;
+                .temaTitle {
+                    @include row;
+                    width: 100%;
+                    padding: 0.4rem 0 0.4rem 0.5rem;
+                    .img {
+                        @include center;
+                        img {
+                            width: 1rem;
+                            height: 1rem;
+                            transform: rotate(180deg);
+                            margin: 0 0.2rem 0 0;
+                        }
+                    }
+                    h2 {
+                        font-size: 1.05rem;
+                        color: white;
+                    }
                     &:hover {
                         cursor: pointer;
-                        box-shadow: 0 0 0 1px black inset;
                     }
+                }
+                .subtemas {
+                    @include column;
+                    margin-bottom: 0.5rem;
+                    a {
+                        padding: 0.2rem 0 0.2rem 1rem;
+                        color: white;
+                        font-size: 0.9rem;
+                        img {
+                            width: 0.8rem;
+                            transform: rotate(180deg);
+                            margin: 0 0.2rem 0 0;
+                        }
+                        &:hover {
+                            cursor: pointer;
+                            box-shadow: 0 0 0 1px black inset;
+                        }
+                    }
+                }
+                .hide {
+                    display: none;
                 }
             }
         }
@@ -73,8 +102,16 @@ $color7: #4d3580;
                 }
             }
         }
+        .subtemas {
+            a {
+                &:hover {
+                    background-color: darken($color: $color1, $amount: 10%);
+                }
+            }
+        }
     }
 }
+
 .color2 {
     background-color: lighten($color: $color2, $amount: 10%);
     .title {
@@ -91,6 +128,13 @@ $color7: #4d3580;
                 &:hover {
                     background-color: darken($color: $color2, $amount: 5%);
                     cursor: pointer;
+                }
+            }
+        }
+        .subtemas {
+            a {
+                &:hover {
+                    background-color: darken($color: $color2, $amount: 10%);
                 }
             }
         }
@@ -115,6 +159,13 @@ $color7: #4d3580;
                 }
             }
         }
+        .subtemas {
+            a {
+                &:hover {
+                    background-color: darken($color: $color3, $amount: 10%);
+                }
+            }
+        }
     }
 }
 .color4 {
@@ -133,6 +184,13 @@ $color7: #4d3580;
                 &:hover {
                     background-color: darken($color: $color4, $amount: 5%);
                     cursor: pointer;
+                }
+            }
+        }
+        .subtemas {
+            a {
+                &:hover {
+                    background-color: darken($color: $color4, $amount: 10%);
                 }
             }
         }
@@ -157,6 +215,13 @@ $color7: #4d3580;
                 }
             }
         }
+        .subtemas {
+            a {
+                &:hover {
+                    background-color: darken($color: $color5, $amount: 10%);
+                }
+            }
+        }
     }
 }
 .color6 {
@@ -178,6 +243,13 @@ $color7: #4d3580;
                 }
             }
         }
+        .subtemas {
+            a {
+                &:hover {
+                    background-color: darken($color: $color6, $amount: 10%);
+                }
+            }
+        }
     }
 }
 .color7 {
@@ -196,6 +268,13 @@ $color7: #4d3580;
                 &:hover {
                     background-color: darken($color: $color7, $amount: 5%);
                     cursor: pointer;
+                }
+            }
+        }
+        .subtemas {
+            a {
+                &:hover {
+                    background-color: darken($color: $color7, $amount: 10%);
                 }
             }
         }

@@ -1,4 +1,5 @@
 import React from "react";
+import { useGetasignatura } from "../../hooks/useGetasignatura";
 import { CardMateria } from "../sections/CardMateria";
 import { Dashboard } from "./Dashboard";
 
@@ -46,7 +47,7 @@ export const Asignaturas = () => {
             title: "Algebra Lineal",
             list: [
                 "Números complejos",
-                "Matricesy determinantes",
+                "Matrices y determinantes",
                 "Sistemas de ecuaciones lineales",
                 "Espacios vectoriales",
                 "Transformaciones lineales"
@@ -93,22 +94,28 @@ export const Asignaturas = () => {
                 "Protección y seguridad "
             ],
             color: "color5",
-            linkTitle: "/TallerDeDiseño",
+            linkTitle: "/SistemasOperativos",
             linksItem: [
                 "/IntroducciónaLosSistemasOperativos",
                 "/AdministraciónDeProcesosyDelProcesador",
                 "/AdministraciónDeMemoria",
                 "/AdministraciónDeEntrada/salida",
                 "/SistemasDeArchivos",
-                "/ProtecciónySeguridad "
+                "/ProtecciónySeguridad"
             ]
         }
     ];
 
+    let subTemas = [];
+    list.forEach((item) => {
+        let asignatura = useGetasignatura(item.linkTitle.substring(1));
+        subTemas.push(asignatura);
+    });
+
     return (
         <Dashboard>
             <div className="CardMateria__container">
-                {list.map((item, index) => (
+                {subTemas.map((item, index) => (
                     <CardMateria key={index} {...item} />
                 ))}
             </div>

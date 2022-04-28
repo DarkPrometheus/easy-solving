@@ -22,11 +22,11 @@ export const useGetasignatura = (asignatura) => {
                         ],
                         linksSubTemas: [
                             "/LosNumerosReales",
-                            "/AxiomasDeLosNúmerosReales",
-                            "/IntervalosySuRepresentaciónGráfica",
+                            "/AxiomasDeLosNumerosReales",
+                            "/IntervalosySuRepresentacionGráfica",
                             "/ValorAbsolutoySusPropiedades",
                             "/PropiedadesDeLasDesigualdades",
-                            "/ResoluciónDeDesigualdadesDePrimerySegundoGradoConUnaIncógnita",
+                            "/ResolucionDeDesigualdadesDePrimerySegundoGradoConUnaIncognita",
                             "/ResoluciónDeDesigualdadesQueIncluyanValorAbsoluto"
                         ]
                     },
@@ -143,6 +143,447 @@ export const useGetasignatura = (asignatura) => {
                     "/AplicacionesDeLaDerivada"
                 ],
                 color: "color1"
+            };
+            break;
+        case "FundamentosDeProgramacion":
+            asignaturaObj = {
+                nombreAsignatura: "Fundamentos de Programacion",
+                linkAsignatura: "/FundamentosDeProgramacion",
+                temas: [
+                    {
+                        nombreTema: "Diseño de algoritmos",
+                        subTemas: [
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet"
+                        ],
+                        linksSubTemas: [
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet"
+                        ]
+                    },
+                    {
+                        nombreTema: "Introduccion a la programacion",
+                        subTemas: [
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet"
+                        ],
+                        linksSubTemas: [
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet"
+                        ]
+                    },
+                    {
+                        nombreTema: "Control de flujo",
+                        subTemas: [
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet"
+                        ],
+                        linksSubTemas: [
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet"
+                        ]
+                    },
+                    {
+                        nombreTema: "Organizacion de datos",
+                        subTemas: [
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet"
+                        ],
+                        linksSubTemas: [
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet"
+                        ]
+                    },
+                    {
+                        nombreTema: "Modularidad",
+                        subTemas: [
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet"
+                        ],
+                        linksSubTemas: [
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet"
+                        ]
+                    }
+                ],
+                linksTemas: [
+                    "/DiseñoDeAlgoritmos",
+                    "/IntroduccionALaProgramacion",
+                    "/ControlDeFlujo",
+                    "/OrganizacionDeDatos",
+                    "/Modularidad"
+                ],
+                color: "color2"
+            };
+            break;
+        case "AlgebraLineal":
+            asignaturaObj = {
+                nombreAsignatura: "Algebra Lineal",
+                linkAsignatura: "/AlgebraLineal",
+                temas: [
+                    {
+                        nombreTema: "Números complejos",
+                        subTemas: [
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet"
+                        ],
+                        linksSubTemas: [
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet"
+                        ]
+                    },
+                    {
+                        nombreTema: "Matrices y determinantes",
+                        subTemas: [
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet"
+                        ],
+                        linksSubTemas: [
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet"
+                        ]
+                    },
+                    {
+                        nombreTema: "Sistemas de ecuaciones lineales",
+                        subTemas: [
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet"
+                        ],
+                        linksSubTemas: [
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet"
+                        ]
+                    },
+                    {
+                        nombreTema: "Espacios vectoriales",
+                        subTemas: [
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet"
+                        ],
+                        linksSubTemas: [
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet"
+                        ]
+                    },
+                    {
+                        nombreTema: "Transformaciones lineales",
+                        subTemas: [
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet"
+                        ],
+                        linksSubTemas: [
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet"
+                        ]
+                    }
+                ],
+                linksTemas: [
+                    "/NúmerosComplejos",
+                    "/MatricesyDeterminantes",
+                    "/SistemasDeEcuacionesLineales",
+                    "/EspaciosVectoriales",
+                    "/TransformacionesLineales"
+                ],
+                color: "color7"
+            };
+            break;
+        case "EstructuraDeDatos":
+            asignaturaObj = {
+                nombreAsignatura: "Estructura de Datos",
+                linkAsignatura: "/EstructuraDeDatos",
+                temas: [
+                    {
+                        nombreTema: "Introducción a las estructuras de datos",
+                        subTemas: [
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet"
+                        ],
+                        linksSubTemas: [
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet"
+                        ]
+                    },
+                    {
+                        nombreTema: "Recursividad",
+                        subTemas: [
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet"
+                        ],
+                        linksSubTemas: [
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet"
+                        ]
+                    },
+                    {
+                        nombreTema: "Estructuras lineales",
+                        subTemas: [
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet"
+                        ],
+                        linksSubTemas: [
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet"
+                        ]
+                    },
+                    {
+                        nombreTema: "Estructuras no lineales",
+                        subTemas: [
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet"
+                        ],
+                        linksSubTemas: [
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet"
+                        ]
+                    },
+                    {
+                        nombreTema: "Métodos de ordenamiento",
+                        subTemas: [
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet"
+                        ],
+                        linksSubTemas: [
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet"
+                        ]
+                    },
+                    {
+                        nombreTema: "Métodos de búsqueda",
+                        subTemas: [
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet"
+                        ],
+                        linksSubTemas: [
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet"
+                        ]
+                    }
+                ],
+                linksTemas: [
+                    "/IntroducciónALasEstructurasDeDatos",
+                    "/Recursividad",
+                    "/EstructurasLineales",
+                    "/EstructurasNoLineales",
+                    "/MétodosDeOrdenamiento",
+                    "/MétodosDeBúsqueda"
+                ],
+                color: "color4"
+            };
+            break;
+        case "SistemasOperativos":
+            asignaturaObj = {
+                nombreAsignatura: "Sistemas Operativos",
+                linkAsignatura: "/SistemasOperativos",
+                temas: [
+                    {
+                        nombreTema: "Introducción a los Sistemas Operativos",
+                        subTemas: [
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet"
+                        ],
+                        linksSubTemas: [
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet"
+                        ]
+                    },
+                    {
+                        nombreTema:
+                            "Administración de Procesos y del procesador",
+                        subTemas: [
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet"
+                        ],
+                        linksSubTemas: [
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet"
+                        ]
+                    },
+                    {
+                        nombreTema: "Administración de memoria",
+                        subTemas: [
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet"
+                        ],
+                        linksSubTemas: [
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet"
+                        ]
+                    },
+                    {
+                        nombreTema: "Administración de entrada/salida",
+                        subTemas: [
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet"
+                        ],
+                        linksSubTemas: [
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet"
+                        ]
+                    },
+                    {
+                        nombreTema: "Sistemas de archivos",
+                        subTemas: [
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet"
+                        ],
+                        linksSubTemas: [
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet"
+                        ]
+                    },
+                    {
+                        nombreTema: "Protección y seguridad ",
+                        subTemas: [
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet",
+                            "Lorem ipsum dolor sit amet"
+                        ],
+                        linksSubTemas: [
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet",
+                            "/LoremIpsumDolorSitAmet"
+                        ]
+                    }
+                ],
+                linksTemas: [
+                    "/IntroducciónaLosSistemasOperativos",
+                    "/AdministraciónDeProcesosyDelProcesador",
+                    "/AdministraciónDeMemoria",
+                    "/AdministraciónDeEntrada/salida",
+                    "/SistemasDeArchivos",
+                    "/ProtecciónySeguridad"
+                ],
+                color: "color5"
             };
             break;
         default:

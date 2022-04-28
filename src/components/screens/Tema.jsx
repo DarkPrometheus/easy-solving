@@ -26,26 +26,64 @@ export const Tema = () => {
     return (
         <Dashboard>
             <div className="CardAsignatura__container">
-                <div className={"CardAsignatura__content color1"}>
+                <div className={"Tema__container color1"}>
                     <Link className="title" to={"/Asignaturas/" + asignatura}>
                         {title}
                     </Link>
-                    <div className="CardAsignatura__body">
-                        <div>
-                            {/* {asignaturaObj.list.map((item, index) => (
-                                <Link
-                                    key={index}
-                                    to={
-                                        "/Asignaturas" +
-                                        asignatura +
-                                        asignaturaObj.linksItem[index]
-                                    }
-                                >
-                                    <img src={arrow} />
-                                    {item}
-                                </Link>
-                            ))} */}
-                        </div>
+                    <div className="Tema__content">
+                        <h1>Lorem ipsum dolor sit amet consectetur</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Nihil odit sint eos molestiae quo sequi quia
+                            cum! Soluta sapiente distinctio rerum architecto
+                            magni obcaecati quia repellat voluptatibus
+                            consequuntur. Libero, mollitia! Lorem ipsum dolor
+                            sit amet consectetur adipisicing elit. Nihil odit
+                            sint eos molestiae quo sequi quia cum! Soluta
+                        </p>
+                        <img src="#" alt="" />
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. A, libero pariatur ipsum in saepe officiis
+                            animi quibusdam at. Laboriosam aliquam esse eveniet
+                            neque a laudantium dolores enim repellat, sed
+                            debitis. Lorem ipsum dolor, sit amet consectetur
+                            adipisicing elit. Voluptatibus illum explicabo
+                            omnis. Quo debitis eligendi provident quos error!
+                            Quasi consectetur quas voluptate eos sint doloremque
+                            mollitia obcaecati at porro. Consectetur!
+                        </p>
+                        <img src="#" alt="" />
+                        <h1>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit
+                        </h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Natus amet impedit enim? Tenetur amet alias
+                            facilis magni aliquid minima, libero non quas ipsum
+                            eligendi natus necessitatibus adipisci ipsa veniam
+                            saepe.
+                        </p>
+                        <img src="#" alt="" />
+                        <h1>Natus amet impedit enim</h1>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Nesciunt quibusdam officiis beatae eius
+                            voluptas non, officia placeat omnis maiores atque
+                            dolor perferendis provident dolore inventore nisi,
+                            accusamus enim dicta voluptatum. Lorem ipsum dolor
+                            sit, amet consectetur adipisicing elit. Omnis,
+                            voluptatum aperiam nemo harum blanditiis nisi ea
+                            numquam quia repellendus quam veniam, ullam
+                            molestias, iusto facilis qui aut voluptatem alias
+                            ipsa. Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Eos et corrupti, praesentium a
+                            officia alias itaque dolores hic id blanditiis iste
+                            consequatur facilis quasi dolorum incidunt nesciunt,
+                            facere, rem quisquam.
+                        </p>
+                        <div className="button">Ir a ejercios</div>
                     </div>
                 </div>
             </div>

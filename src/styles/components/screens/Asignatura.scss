@@ -8,10 +8,11 @@
         @include column;
         width: 90%;
         height: 95%;
-        place-self: center;
         border-radius: 1rem;
-        user-select: none;
         overflow: auto;
+
+        place-self: center;
+        user-select: none;
         .title {
             @include center;
             flex: 1;
@@ -26,6 +27,7 @@
             }
         }
         .CardAsignatura__body {
+            @include full;
             flex: 12;
             display: grid;
             grid-template-columns: 50% 50%;
