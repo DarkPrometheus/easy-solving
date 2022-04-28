@@ -1,32 +1,13 @@
 import { initializeApp } from "firebase/app";
-import {
-    getStorage,
-    ref,
-    uploadBytes,
-    getDownloadURL,
-    getBytes
-} from "firebase/storage";
-import {
-    GoogleAuthProvider,
-    getAuth,
-    signInWithPopup,
-    signInWithEmailAndPassword,
-    createUserWithEmailAndPassword,
-    sendPasswordResetEmail,
-    signOut
-} from "firebase/auth";
+import { getStorage } from "firebase/storage";
+import { getAuth } from "firebase/auth";
 import {
     getFirestore,
-    query,
-    getDocs,
     collection,
-    where,
-    addDoc,
     doc,
     getDoc,
     setDoc
 } from "firebase/firestore";
-import { async } from "@firebase/util";
 
 const firebaseConfig = {
     apiKey: import.meta.env.VITE_APIKEY,
