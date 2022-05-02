@@ -25,3 +25,8 @@ button {
     all: unset;
     color: black;
 }
+
+textarea:focus,
+input:focus {
+    outline: none;
+}

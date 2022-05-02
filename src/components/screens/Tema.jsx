@@ -83,7 +83,9 @@ export const Tema = () => {
                             consequatur facilis quasi dolorum incidunt nesciunt,
                             facere, rem quisquam.
                         </p>
-                        <div className="button">Ir a ejercios</div>
+                        <Link to="/EjercicioTest" className="button">
+                            Ir a ejercios
+                        </Link>
                     </div>
                 </div>
             </div>

@@ -5,6 +5,7 @@ import { Register } from "../auth/Register";
 import { Asignatura } from "../screens/Asignatura";
 import { Asignaturas } from "../screens/Asignaturas";
 import { Dashboard } from "../screens/Dashboard";
+import { SistemaEcuaciones } from "../screens/ejercicios/SistemaEcuaciones";
 import { Tema } from "../screens/Tema";
 
 // React Router
@@ -24,6 +25,7 @@ export const AppRouter = () => {
                     path="/Asignaturas/:asignatura/:subtema"
                     element={<Tema />}
                 />
+                <Route path="/EjercicioTest" element={<SistemaEcuaciones />} />
                 <Route path="/" element={<Dashboard />} />
             </Routes>
         </Router>

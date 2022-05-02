@@ -13,19 +13,6 @@
 
         place-self: center;
         user-select: none;
-        .title {
-            @include center;
-            flex: 1;
-            padding: 0.5rem;
-            border-top-left-radius: 0.5rem;
-            border-top-right-radius: 0.5rem;
-            font-size: 2.7rem;
-            text-align: center;
-            &:hover {
-                cursor: pointer;
-                color: white;
-            }
-        }
         .CardAsignatura__body {
             @include full;
             flex: 12;
@@ -67,5 +54,19 @@
                 }
             }
         }
+    }
+}
+
+.title {
+    @include center;
+    flex: 1;
+    padding: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    font-size: 2.7rem;
+    text-align: center;
+    &:hover {
+        cursor: pointer;
+        color: white;
     }
 }
