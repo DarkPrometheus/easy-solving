@@ -64,3 +64,9 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .Navbar {
+        display: none;
+    }
+}

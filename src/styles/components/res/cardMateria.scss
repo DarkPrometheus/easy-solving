@@ -1,4 +1,4 @@
-@use "../../base/mixins" as *;
+@use "../../base/index" as *;
 
 .CardMateria__container {
     @include full;
@@ -74,4 +74,57 @@
             }
         }
     }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+    .CardMateria__container {
+        grid-template-columns: 100%;
+        .CardMateria__content {
+            .title {
+                &:hover {
+                }
+            }
+            .CardMateria__body {
+                .tema {
+                    .temaTitle {
+                        .img {
+                            img {
+                            }
+                        }
+                        h2 {
+                        }
+                        &:hover {
+                        }
+                    }
+                    .subtemas {
+                        a {
+                            img {
+                            }
+                            &:hover {
+                            }
+                        }
+                    }
+                    .hide {
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 }

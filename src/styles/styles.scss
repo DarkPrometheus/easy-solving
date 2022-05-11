@@ -1,8 +1,17 @@
-@import "./components/auth/Auth.scss";
-@import "./components/nav/Navbar.scss";
+/* @import "./components/screens/Dashboard.scss";
 @import "./components/nav/Menu.scss";
-@import "./components/screens/Dashboard.scss";
 @import "./components/screens/Asignatura.scss";
 @import "./components/screens/Tema.scss";
 @import "./components/sections/CardMateria.scss";
-@import "./components/ejercicios/SistemaEcuaciones.scss";
+
+@import "./components/ejercicios/SistemaEcuaciones.scss"; */
+
+/* @import "./components/auth/Auth.scss";
+@import "./components/nav/Navbar.scss"; */
+
+@import "./components/res/dashboard.scss";
+@import "./components/res/menu.scss";
+@import "./components/res/asignatura.scss";
+@import "./components/res/tema.scss";
+@import "./components/res/cardMateria.scss";
+@import "./components/res/sistemaEcuaciones.scss";

@@ -96,62 +96,66 @@ export const SistemaEcuaciones = () => {
                     <div className="CardEjercicio__body">
                         <div className="Ecuaciones">
                             <div className="Ecuacion">
-                                <input
-                                    type="number"
-                                    id="x1"
-                                    value={x1}
-                                    onChange={(e) =>
-                                        HandleInputChange(e.target)
-                                    }
-                                />
-                                <span>x</span>
-                                <input
-                                    type="number"
-                                    id="y1"
-                                    value={y1}
-                                    onChange={(e) =>
-                                        HandleInputChange(e.target)
-                                    }
-                                />
-                                <span>y = </span>
-                                <input
-                                    type="number"
-                                    id="resultado1"
-                                    value={resultado1}
-                                    onChange={(e) =>
-                                        HandleInputChange(e.target)
-                                    }
-                                />
-                                <b>&lt;-- Ecuacion 1</b>
+                                <b>Ecuacion 1</b>
+                                <div className="inputs">
+                                    <input
+                                        type="number"
+                                        id="x1"
+                                        value={x1}
+                                        onChange={(e) =>
+                                            HandleInputChange(e.target)
+                                        }
+                                    />
+                                    <span>x</span>
+                                    <input
+                                        type="number"
+                                        id="y1"
+                                        value={y1}
+                                        onChange={(e) =>
+                                            HandleInputChange(e.target)
+                                        }
+                                    />
+                                    <span>y = </span>
+                                    <input
+                                        type="number"
+                                        id="resultado1"
+                                        value={resultado1}
+                                        onChange={(e) =>
+                                            HandleInputChange(e.target)
+                                        }
+                                    />
+                                </div>
                             </div>
                             <div className="Ecuacion">
-                                <input
-                                    type="number"
-                                    id="x2"
-                                    value={x2}
-                                    onChange={(e) =>
-                                        HandleInputChange(e.target)
-                                    }
-                                />
-                                <span>x</span>
-                                <input
-                                    type="number"
-                                    id="y2"
-                                    value={y2}
-                                    onChange={(e) =>
-                                        HandleInputChange(e.target)
-                                    }
-                                />
-                                <span>y = </span>
-                                <input
-                                    type="number"
-                                    id="resultado2"
-                                    value={resultado2}
-                                    onChange={(e) =>
-                                        HandleInputChange(e.target)
-                                    }
-                                />
-                                <b>&lt;-- Ecuacion 2</b>
+                                <b>Ecuacion 2</b>
+                                <div className="inputs">
+                                    <input
+                                        type="number"
+                                        id="x2"
+                                        value={x2}
+                                        onChange={(e) =>
+                                            HandleInputChange(e.target)
+                                        }
+                                    />
+                                    <span>x</span>
+                                    <input
+                                        type="number"
+                                        id="y2"
+                                        value={y2}
+                                        onChange={(e) =>
+                                            HandleInputChange(e.target)
+                                        }
+                                    />
+                                    <span>y = </span>
+                                    <input
+                                        type="number"
+                                        id="resultado2"
+                                        value={resultado2}
+                                        onChange={(e) =>
+                                            HandleInputChange(e.target)
+                                        }
+                                    />
+                                </div>
                             </div>
                             <div className="botones">
                                 <button onClick={solve}>Calcular</button>

@@ -1,0 +1,183 @@
+@use "../../base/index" as *;
+
+.CardEjercicio__content {
+    @include column;
+    width: 90%;
+    height: 95%;
+    border-radius: 1rem;
+    overflow: auto;
+    .title {
+        flex: 0 1 auto;
+    }
+    .CardEjercicio__body {
+        width: 100%;
+        .Ecuaciones {
+            @include center;
+            margin-top: 2rem;
+            width: 100%;
+            font-size: 1.5rem;
+            .Ecuacion {
+                @include center;
+                margin: 0.5rem;
+                b {
+                    margin-bottom: 1rem;
+                }
+                .inputs {
+                    input {
+                        font-size: 1.2rem;
+                        width: 4rem;
+                        margin: 0 0.1rem 0 0.5rem;
+                    }
+                }
+            }
+            button {
+                margin: 0.5rem;
+                padding: 0.5rem;
+                border-radius: 0.5rem;
+                background-color: #2f5f84;
+                color: white;
+                font-size: 1.2rem;
+                text-align: center;
+                &:hover {
+                    cursor: pointer;
+                    background-color: darken($color: #2f5f84, $amount: 10%);
+                }
+                &:active {
+                    background-color: darken($color: #2f5f84, $amount: 5%);
+                }
+            }
+        }
+        .procedimiento {
+            @include center;
+            h1 {
+                font-size: 1.5rem;
+                color: antiquewhite;
+            }
+            .paso__container {
+                @include center;
+                width: 50%;
+                margin: 0.8rem 0;
+                padding: 0.6rem;
+                border-radius: 1rem;
+                background-color: darken($color: #2f5f84, $amount: 5%);
+                .paso {
+                    @include row;
+                    align-items: center;
+                    margin: 1rem;
+                    font-size: 1.8rem;
+                    .fraccion {
+                        @include row;
+                        p {
+                            @include center;
+                        }
+                        .fraccion__content {
+                            font-size: 1rem;
+                            @include center;
+                            .top {
+                                border-bottom: 1px solid black;
+                            }
+                        }
+                    }
+                    .resultado__container {
+                        margin: 0 0.2rem;
+                    }
+                }
+            }
+            .resultado {
+                @include center;
+                border-radius: 1rem;
+                width: 60%;
+                margin: 2rem;
+                padding: 1rem;
+                background-color: darken($color: #2f5f84, $amount: 5%);
+                h1 {
+                    font-size: 1.8rem;
+                    margin: 0 0 0.5rem 0;
+                }
+                .valores {
+                    @include center;
+                    @include row;
+                    justify-content: space-evenly;
+                    font-size: 1.7rem;
+                    width: 50%;
+                    span {
+                        @include center;
+                        margin-right: 1rem;
+                        p {
+                            font-size: 1.5rem;
+                        }
+                        .num {
+                            border-bottom: 1px solid black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+    .CardEjercicio__content {
+        .title {
+        }
+        .CardEjercicio__body {
+            .Ecuaciones {
+                margin-top: 1rem;
+                .Ecuacion {
+                    b {
+                    }
+                    .inputs {
+                        input {
+                            font-size: 2rem;
+                            width: 5rem;
+                        }
+                    }
+                }
+                button {
+                    width: 7rem;
+                    font-size: 1.4rem;
+                    &:hover {
+                    }
+                    &:active {
+                    }
+                }
+            }
+            .procedimiento {
+                h1 {
+                }
+                .paso__container {
+                    width: 80%;
+                    .paso {
+                        .fraccion {
+                            p {
+                            }
+                            .fraccion__content {
+                                .top {
+                                }
+                            }
+                        }
+                        .resultado__container {
+                        }
+                    }
+                }
+                .resultado {
+                    h1 {
+                    }
+                    .valores {
+                        span {
+                            p {
+                            }
+                            .num {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}

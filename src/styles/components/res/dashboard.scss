@@ -1,0 +1,55 @@
+@use "../../base/index" as *;
+
+.Dashboard {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    .Dashboard__container {
+        @include full;
+        background-color: #e6e6e6;
+        display: grid;
+        grid-template-rows: 5rem auto;
+        overflow: auto;
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .Dashboard {
+        .Dashboard__container {
+        }
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+    .Dashboard {
+        .Dashboard__container {
+        }
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .Dashboard {
+        .Dashboard__container {
+        }
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+    .Dashboard {
+        flex-direction: column;
+        .Dashboard__container {
+        }
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .Dashboard {
+        .Dashboard__container {
+        }
+    }
+}

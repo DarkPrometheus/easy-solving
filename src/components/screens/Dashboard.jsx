@@ -1,12 +1,8 @@
-import { onAuthStateChanged } from "firebase/auth";
-import React, { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
-import { auth } from "../../firebase/firebase";
+import React from "react";
 import { Menu } from "../nav/Menu";
-import { Navbar } from "../nav/Navbar";
 
 export const Dashboard = ({ children }) => {
-    const navigate = useNavigate();
+    /*     const navigate = useNavigate();
     const [user, setUser] = useState(null);
 
     // TODO: Mover contenido de useEffect a un componente aparte
@@ -18,15 +14,12 @@ export const Dashboard = ({ children }) => {
                 setUser(user);
             }
         });
-    }, [navigate]);
+    }, [navigate]); */
 
     return (
         <div className="Dashboard">
             <Menu />
-            <div className="Dashboard__container">
-                <Navbar />
-                <div className="Dashboard__content">{children}</div>
-            </div>
+            <div className="Dashboard__container">{children}</div>
         </div>
     );
 };
